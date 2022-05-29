@@ -1,0 +1,49 @@
+.slick__item{
+  width: 200px;
+  margin: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.slick{
+  width: 80vw;
+  margin: auto;
+}
+
+.slick-track{
+  display: flex !important;
+  align-items: center;
+}
+
+body{
+  background-color: #FFF9F0;
+}
+
+.slick__item-name{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+}
+
+.slick__item-content{
+  padding: 10px;
+  font-size: 18px;
+}
+
+.slick-center{
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition: 0.5s linear;
+  animation: upsign 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: rgb(38, 38, 38);
+}
+
+@keyframes upsign {
+  from {height: 200px;}
+  to {height: 250px;}
+  }
